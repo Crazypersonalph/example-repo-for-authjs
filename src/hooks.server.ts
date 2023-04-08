@@ -11,7 +11,7 @@ async function authorization({ event, resolve }) {
         if (!session) {
             throw redirect(303, '/auth/signin');
         }
-        console.log(session.user.image)
+        console.log(session)
     }
 
     // If the request is still here, just proceed as normally
